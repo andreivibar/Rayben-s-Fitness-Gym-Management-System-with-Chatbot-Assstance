@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Shared application accent: keep existing violet utility markup compatible
+	while matching the cyan branding used by the public landing page. */
+[class~="bg-violet-50"], [class~="bg-violet-50/50"], [class~="bg-violet-50/60"] { background-color: #ecfeff !important; }
+[class~="bg-violet-100"] { background-color: #cffafe !important; }
+[class~="bg-violet-200"], [class~="bg-violet-200/80"] { background-color: #a5f3fc !important; }
+[class~="bg-violet-300"] { background-color: #67e8f9 !important; }
+[class~="bg-violet-400"] { background-color: #22d3ee !important; }
+[class~="bg-violet-500"] { background-color: #06b6d4 !important; }
+[class~="bg-violet-600"] { background-color: #0891b2 !important; }
+[class~="bg-violet-700"] { background-color: #0e7490 !important; }
+[class~="bg-violet-800"] { background-color: #155e75 !important; }
+
+[class~="text-violet-500"] { color: #06b6d4 !important; }
+[class~="text-violet-600"] { color: #0891b2 !important; }
+[class~="text-violet-700"], [class~="text-violet-800"], [class~="text-violet-900"] { color: #0e7490 !important; }
+
+[class~="border-violet-100"] { border-color: #cffafe !important; }
+[class~="border-violet-200"], [class~="border-violet-200/80"] { border-color: #a5f3fc !important; }
+[class~="border-violet-300"] { border-color: #67e8f9 !important; }
+[class~="border-violet-400"], [class~="border-violet-500"], [class~="border-violet-600"], [class~="border-violet-700"] { border-color: #0891b2 !important; }
+
+[class~="ring-violet-200"] { --tw-ring-color: #a5f3fc !important; }
+[class~="ring-violet-500"], [class~="ring-violet-500/10"] { --tw-ring-color: rgb(6 182 212 / 0.35) !important; }
+[class~="shadow-violet-100"], [class~="shadow-violet-200"], [class~="shadow-violet-300"], [class~="shadow-violet-700/20"] { --tw-shadow-color: rgb(6 182 212 / 0.25) !important; }
+
+[class~="hover:bg-violet-50"]:hover, [class~="hover:bg-violet-100"]:hover { background-color: #ecfeff !important; }
+[class~="hover:bg-violet-700"]:hover { background-color: #0e7490 !important; }
+[class~="hover:bg-violet-800"]:hover { background-color: #155e75 !important; }
+[class~="hover:text-violet-700"]:hover, [class~="hover:text-violet-800"]:hover { color: #0e7490 !important; }
+[class~="hover:border-violet-300"]:hover { border-color: #67e8f9 !important; }
+
+[class~="focus:border-violet-400"]:focus, [class~="focus:border-violet-600"]:focus { border-color: #22d3ee !important; }
+[class~="focus:ring-violet-400"]:focus, [class~="focus:ring-violet-500"]:focus { --tw-ring-color: rgb(6 182 212 / 0.35) !important; }

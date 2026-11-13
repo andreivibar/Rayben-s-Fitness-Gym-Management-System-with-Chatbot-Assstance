@@ -1,0 +1,20 @@
+-- REVIEW ONLY. This is an audit note, not an executable migration.
+--
+-- Read-only inspection connected to gym_management on MariaDB 10.11.16 and
+-- confirmed the schema effects of the original 20261102 prerequisite:
+-- registration_requests.member_id/payment_status/discount_status/
+-- payment_amount/reviewed_by/reviewed_at, registration_request_files and its
+-- indexes/FKs, payments.registration_request_id and its unique index, the
+-- gcash payment_channel enum value, and gym_payment_settings are present.
+-- uq_registration_request_document also exists with its expected columns.
+--
+-- No migration ledger table was found. The live schema is structurally
+-- consistent with the prerequisite, but this does not prove which script
+-- produced it. Do not rerun the original 20261102 migration: it would add
+-- existing columns, indexes, constraints and tables, and repeat its settings
+-- INSERT.
+--
+-- Live data checks found no payment or registration-request rows, no
+-- discounted members, and no invalid monthly membership dates. The two
+-- existing monthly members' exact dates are recorded in the audit report and
+-- must be preserved by any later migration. No database changes are proposed.

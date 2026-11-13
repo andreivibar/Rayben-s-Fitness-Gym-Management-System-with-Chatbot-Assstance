@@ -1,0 +1,12 @@
+{
+  "name": "rayben/gym-management-system-backend",
+  "description": "Backend dependencies for Rayben's Fitness Gym Management System",
+  "license": "proprietary",
+  "type": "project",
+  "require": {
+    "phpmailer/phpmailer": "^6.10"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

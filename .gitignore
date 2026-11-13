@@ -1,0 +1,76 @@
+# Environment and local secret files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env*.example
+*.env
+*.env.*
+!*.env*.example
+
+# Local runtime and secret configuration
+**/runtime.conf
+**/*.runtime.conf
+**/runtime.*.conf
+**/*.local.php
+**/config.local.*
+**/secrets/
+**/credentials/
+
+# Private keys and certificate bundles
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+# Database backups and local database files
+**/backup/
+**/backups/
+**/db-backups/
+**/database-backups/
+**/export/
+**/exports/
+**/*backup*.sql
+*.sql.gz
+*.sql.zip
+*.dump
+*.bak
+*.backup
+*.sqlite
+*.sqlite3
+*.db
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build artifacts
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Logs and sensitive exports
+*.log
+**/logs/
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.jsonl
+*.ndjson
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+scratch/
